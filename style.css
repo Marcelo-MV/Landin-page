@@ -1,0 +1,457 @@
+:root {
+    --primary: rgb(242, 234, 148);
+    --secundary: rgb(71, 71, 71);
+    --text-color: rgb(218, 218, 218);
+    --text-secundary: gray;
+    --text-tertiary: rgb(29, 248, 77);
+    --black: rgb(37, 37, 37);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    background-color: var(--secundary);
+}
+a{
+    text-decoration: none;
+}
+
+
+/* container descrição */
+.descricao-lotamento {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    background-image: url(/img/familia.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*container descrição do loteamento*/
+.boas-vindas{
+    height: 85vh;
+    background-color:#276552e2;
+    padding: 50px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: inset 0px 0px 50px 9px #31703f;    
+}
+.pacote-titulos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.boas-vindas h1{
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: normal;
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(244, 244, 244);
+}
+.boas-vindas h2{
+    color: var(--primary);
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 38px;
+}
+.boas-vindas h3{
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin-top: 30px;
+    text-align: left;
+    line-height: 38px;
+}
+.botao-falar-consultor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+   align-self: center;
+   margin-bottom: 30px;
+}
+
+
+/*ajustar planta loteamento*/
+.pacote-planta-loteamento {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    margin: 0 20px 15px 0;
+}
+
+.planta-loteamento {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    color: aliceblue;
+    border: solid 4px rgb(0, 0, 0);
+    border-radius: 4px;
+}
+.planta-loteamento:hover{
+max-width: 100%;
+max-height: 100%;
+transform: scale(1.2);
+transition: 400ms;
+}
+
+.planta-loteamento img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.botao-baixar-planta a{
+    color: antiquewhite;
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-top: solid 4px rgb(0, 0, 0);
+    background-color: rgb(47, 47, 47);
+    padding: 10px;
+    gap: 2px;
+}
+.botao-baixar-planta img{
+    object-fit: cover;
+    width: 32px;
+}
+
+
+.botao-acessar {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #0d2407;
+    color: rgb(216 255 0);
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .botao-falar-consultor a{
+    width: 50%;
+  }
+ 
+  .botao-acessar2 {
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #99ff0600;
+    color: #F2EA94;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    font-size: 16px;
+   
+    justify-content: center;
+}
+.botao-acessar:hover{
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(1.05);
+    transition: 400ms;
+    cursor: pointer;
+}
+.botao-acessar2:hover{
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(1.05);
+    transition: 400ms;
+    cursor: pointer;
+}
+.sobre{
+    display: flex;
+    color: #276552e2;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 25px 50px 25px 50px;
+     background-color:#ffffffe2;
+     
+}
+.descricao-empreendimento{
+    width: 60%;
+}
+.sobre h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.exclusividade-vendas{
+    display: flex;
+
+}
+
+.exclusividade-vendas a img{
+    object-fit: cover;
+}
+.galeria{
+    padding: 0px 50px;
+    display: flex;
+    width: 40%;
+}
+.galeria figure{
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 0px 16px 1px rgba(136, 136, 136, 0.774);
+}
+.galeria img{
+    margin-left: 0;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.localizacao{
+    display: flex;
+    width: 100%;
+    height: 66vh;
+    justify-content: space-around;
+    background-color:#276552e2;
+    color: #F2EA94;
+    
+    
+}
+
+.texto-localizacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 50px;
+    gap: 30px;
+   
+}
+
+.texto-localizacao{
+    font-size: 20px;
+}
+/* incorporação mapa */
+.iframe-gmaps{
+    padding: 50px;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+   
+}
+iframe{
+    border-radius: 5px;
+}
+footer{
+    font-family: sans-serif;
+    font-weight: 300;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(238, 238, 238);
+    font-style: oblique;
+    font-size: 12px;
+    background-color: #1d1d1d;
+}
+@media (max-width: 767px){
+    .descricao-lotamento{
+        flex-direction: column;
+        background-image: none;
+     }
+    .boas-vindas{
+        height: auto;
+        width: 100%;
+        padding: 0px 30px;
+        
+    }
+    .boas-vindas h1{
+        font-size: 4rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .boas-vindas h2{
+        text-align: center;
+        line-height: normal;
+        font-size: 1.2rem;
+    }
+    .boas-vindas h3{
+        text-align: center ;
+        line-height: normal;
+        font-size: 1.1rem;
+    }
+    .botao-falar-consultor{
+        display: block;
+    }
+    .botao-acessar{
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+    .botao-acessar2{
+        padding: 10px 0px;
+        margin-bottom: 10px;
+    }
+    .pacote-planta-loteamento{
+        margin: 0px;
+        height: 45vh;
+        width: 100%;
+        align-items: end;
+        background-position: 50% 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(img/familia-mobile.jpg);
+        justify-content: flex-start;
+    }
+    .planta-loteamento{
+        width: 40%;
+        margin: 0px 0px 15px 20px;
+    }
+    .botao-baixar-planta a{
+        font-size: 13px;
+    }
+    .botao-baixar-planta img{
+        width: 26px;
+    }
+    .planta-loteamento[disabled]:hover{
+        max-width: 100%;
+        max-height: 100%;
+        transform: scale(1.2);
+        transition: 400ms;
+        }
+    
+    .botao-acessar[disabled]:hover{
+        max-width: 100%;
+        max-height: 100%;
+        transform: scale(1.2);
+        transition: 400ms;
+        cursor: pointer;
+    }
+    .botao-acessar[disabled]:hover{
+        max-width: 100%;
+        max-height: 100%;
+        transform: scale(1.2);
+        transition: 400ms;
+        cursor: pointer;
+    }
+    .botao-acessar2 [disabled]:hover{
+        max-width: 100%;
+        max-height: 100%;
+        transform: scale(1.2);
+        transition: 400ms;
+        cursor: pointer;
+    }
+    .botao-acessar2 [disabled]:hover{
+        max-width: 100%;
+        max-height: 100%;
+        transform: scale(1.2);
+        transition: 400ms;
+        cursor: pointer;
+    }
+   
+    
+    
+    .sobre{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .sobre h1{
+        margin-top: 10px;
+        padding: 10px 0px;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .descricao-empreendimento{
+        width: 100%;
+    }
+    .exclusividade-vendas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .exclusividade-vendas img{
+        width: 150px;
+    }
+    .galeria {
+        padding: 0px;
+        height: 55%;
+        width: 100%;
+    }
+    .galeria figure{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .galeria img{
+        margin-left: 0;
+        border-radius: 15px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .localizacao{
+    flex-direction:column;
+
+    }
+    .iframe-gmaps{
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* BOTÃO WHATS APP */
+.btn-whatsapp {
+    position: fixed;
+    outline: none;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background: url(img/whatsapp.png);
+    background-size: cover;
+    
+    font-size: 2.3rem;
+    border: 1px solid #f1f1f1;
+    animation: pulsar 0.8s ease-out 1s infinite alternate none running;
+}
+
+a {
+    color: inherit;
+}
+
+@keyframes pulsar {
+    0% {
+        height: 45px;
+        width: 45px;
+    }
+    100% {
+        height: 55px;
+        width: 55px;
+    }
+}
+/* FIM BOTÃO WHATS APP */
